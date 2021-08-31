@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+i {
+  pointer-events: none;
+}
+
+body {
+  background: rgb(12, 9, 84);
+  background: linear-gradient(
+    90deg,
+    rgb(15, 11, 116) 0%,
+    rgba(21, 158, 143, 1) 55%,
+    rgba(148, 189, 219, 1) 100%
+  );
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: aliceblue;
+    font-size: 2.5rem;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  input,
+  button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0.1rem;
+    font-size: 1.5rem;
+  }
+
+  input[type="number"] {
+    width: fit-content;
+    text-align: center;
+  }
+  // input number arrow hidden
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: rgba(18, 59, 83, 0.7);
+    color: azure;
+  }
+}
+div.sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+
+  button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: rgba(18, 59, 83, 0.7);
+    color: azure;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div.todo-item {
+    display: flex;
+    width: 50vw;
+    margin: 0.15rem 0rem;
+    transition: all 0.2s ease;
+
+    p {
+      background-color: steelblue;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    p.todo-task {
+      width: fit-content;
+      text-align: center;
+    }
+    p.todo-time {
+      width: fit-content;
+      text-align: center;
+    }
+
+    button {
+      padding: 0.25rem 0.75rem;
+      font-size: 1.5rem;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button.complete {
+      background-color: rgba(18, 109, 18, 0.8);
+    }
+    button.delete {
+      background-color: rgba(173, 28, 28, 0.8);
+    }
+  }
+  div.task-done {
+    opacity: 0.5;
+    text-decoration: line-through;
+    text-decoration-thickness: 0.2rem;
+  }
+}
+// animation
+@keyframes pop {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes vanish {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}

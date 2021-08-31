@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+i {
+  pointer-events: none;
+}
+
+body {
+  background: #0c0954;
+  background: -webkit-gradient(linear, left top, right top, from(#0f0b74), color-stop(55%, #159e8f), to(#94bddb));
+  background: linear-gradient(90deg, #0f0b74 0%, #159e8f 55%, #94bddb 100%);
+}
+
+header {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  color: aliceblue;
+  font-size: 2.5rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+form input,
+form button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: 0.1rem;
+  font-size: 1.5rem;
+}
+
+form input[type="number"] {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+form button {
+  cursor: pointer;
+  background-color: rgba(18, 59, 83, 0.7);
+  color: azure;
+}
+
+div.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+div.sort button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: rgba(18, 59, 83, 0.7);
+  color: azure;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section div.todo-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50vw;
+  margin: 0.15rem 0rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+section div.todo-item p {
+  background-color: steelblue;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+section div.todo-item p.todo-task {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+section div.todo-item p.todo-time {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+section div.todo-item button {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+section div.todo-item button.complete {
+  background-color: rgba(18, 109, 18, 0.8);
+}
+
+section div.todo-item button.delete {
+  background-color: rgba(173, 28, 28, 0.8);
+}
+
+section div.task-done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+@-webkit-keyframes pop {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pop {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes vanish {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes vanish {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
